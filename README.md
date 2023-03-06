@@ -1,15 +1,15 @@
 # NodeJS_Express_CRUD_MySql
 
-Dependecies :
+## Dependecies :
 
 * Node JS ```v18.14```
 * MySql ```v8.0```
 
-Tools :
+## Tools :
 
 * Visual Studio Code
-* Xampp
-* Dbeaver
+* XAMPP
+* DBeaver
 
 ## Installation
 

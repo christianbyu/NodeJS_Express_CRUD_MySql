@@ -2,9 +2,9 @@ const mysql = require('mysql');
 // buat konfigurasi koneksi
 const koneksi = mysql.createConnection({
    host: 'localhost',
-   database: 'nama_database',
-   user: 'sibaay',
-   password: 'password_kalian',
+   database: 'akademik',
+   user: 'root',
+   password: '',
    multipleStatements: true
 });
 // koneksi database
