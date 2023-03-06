@@ -1,2 +1,16 @@
 # NodeJS_Express_CRUD_MySql
-# Materi Pertemuan 1
+
+Dependecies :
+
+* Node JS v18.14
+* MySql v8.0
+
+Tools :
+
+* Visual Studio Code
+* Xampp
+* Dbeaver
+
+## Installation
+
+1. 
