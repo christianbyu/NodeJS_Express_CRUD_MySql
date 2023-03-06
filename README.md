@@ -2,8 +2,8 @@
 
 Dependecies :
 
-* Node JS v18.14
-* MySql v8.0
+* Node JS ```v18.14```
+* MySql ```v8.0```
 
 Tools :
 
