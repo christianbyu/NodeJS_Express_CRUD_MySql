@@ -1,0 +1,21 @@
+version: '3.6'
+
+# App Services
+services:
+  nodejs:
+    build:
+      context: /app
+      dockerfile: Dockerfile/Dockerfile
+    image: nodejs
+    container_name: backend-nodejs
+    restart: always
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/home/node/apps
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: 'bridge'
