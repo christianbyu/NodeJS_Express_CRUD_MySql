@@ -13,4 +13,14 @@
 
 ## Installation
 
-1. 
+### Manual Installation
+
+1. Run this command 
+
+```
+npm init
+npm install express mysql body-parser
+npm install multer
+npm install path
+```
+### Docker
