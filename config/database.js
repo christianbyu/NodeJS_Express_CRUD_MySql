@@ -1,15 +1,19 @@
 const mysql = require('mysql');
-// buat konfigurasi koneksi
 const koneksi = mysql.createConnection({
-   host: '127.0.0.1',
+   host: 'localhost',
+   port: '3306',
    database: 'akademik',
    user: 'root',
-   password: '',
+   password: 'Bayu@123#$%',
    multipleStatements: true
 });
-// koneksi database
+
 koneksi.connect((err) => {
-   if (err) throw err;
-   console.log('MySQL Connected...');
+   if (err) {
+      console.error('Failed to connect to MySQL:', err);
+      return;
+   }
+   console.log('Connected to MySQL...');
 });
+
 module.exports = koneksi;
