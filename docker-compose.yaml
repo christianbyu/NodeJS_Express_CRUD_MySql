@@ -6,7 +6,7 @@ services:
     build:
       dockerfile: Dockerfile/Dockerfile
     image: nodejs
-    container_name: backend-nodejs
+    container_name: backend-nodejs-app
     restart: always
     ports:
       - "5000:5000"
@@ -14,6 +14,25 @@ services:
       - .:/home/node/apps
     networks:
       - backend
+  db:
+    image: mysql:latest
+    container_name: backend-nodejs-db
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Bayu@123#$%
+    networks:
+      - backend
+    ports:
+      - 3306:3306
+  adminer:
+    image: adminer
+    container_name: backend-nodejs-db-adminer
+    restart: always
+    networks:
+      - backend
+    ports:
+      - 8080:8080
 
 networks:
   backend:
