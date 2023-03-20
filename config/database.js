@@ -1,7 +1,7 @@
 const mysql = require('mysql');
 // buat konfigurasi koneksi
 const koneksi = mysql.createConnection({
-   host: 'localhost',
+   host: '127.0.0.1',
    database: 'akademik',
    user: 'root',
    password: '',
