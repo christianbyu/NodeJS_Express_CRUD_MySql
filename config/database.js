@@ -4,7 +4,7 @@ const koneksi = mysql.createConnection({
    port: '3306',
    database: 'akademik',
    user: 'root',
-   password: 'Bayu@123#$%',
+   password: 'Root@123#$%',
    multipleStatements: true
 });
 
