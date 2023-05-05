@@ -25,9 +25,6 @@ var storage = multer.diskStorage({
 var upload = multer({
     storage: storage
 });
- 
-
- 
 
 // create data / insert data
 app.post('/api/mahasiswa',upload.single('image'),(req, res) => {

@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "df1805f8-b740-4628-8075-484af1901829",
+		"name": "Kuliah",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9878750"
+	},
+	"item": [
+		{
+			"name": "CRUD-MAHASISWA",
+			"item": [
+				{
+					"name": "Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "ravee",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_lahir",
+									"value": "2002-10-15",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "kroya",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/ravee/OneDrive/Pictures/Screenshot 2022-06-02 201630.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/mahasiswa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"mahasiswa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "ravee",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_lahir",
+									"value": "2002-10-15",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "kroya",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/ravee/OneDrive/Pictures/Screenshot 2022-06-02 201630.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/mahasiswa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"mahasiswa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"nama\": \"Raveendra\",\r\n            \"tanggal_lahir\": \"2002-00-00\",\r\n            \"alamat\": \"\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/mahasiswa/123",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"mahasiswa",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "ravee",
+									"type": "text"
+								},
+								{
+									"key": "tanggal_lahir",
+									"value": "2002-10-15",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "kroyaa",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/ravee/OneDrive/Pictures/Screenshot 2022-06-02 201630.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/mahasiswa/123456",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"mahasiswa",
+								"123456"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

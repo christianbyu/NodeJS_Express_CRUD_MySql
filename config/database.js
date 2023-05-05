@@ -1,10 +1,10 @@
 const mysql = require('mysql');
 const koneksi = mysql.createConnection({
-   host: 'localhost',
+   host: '$SERVER_HOST',
    port: '3306',
-   database: 'akademik',
-   user: 'root',
-   password: 'Bayu@123#$%',
+   database: '$DATABASE_NAME',
+   user: '$DATABASE_USERNAME',
+   password: '',
    multipleStatements: true
 });
 

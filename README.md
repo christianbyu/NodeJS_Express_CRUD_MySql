@@ -2,7 +2,7 @@
 
 ## Dependecies :
 
-* Node JS ```v18.14```
+* Node JS ```v16.19```
 * MySql ```v8.0```
 
 ## Tools :
@@ -10,6 +10,7 @@
 * Visual Studio Code
 * XAMPP
 * DBeaver
+* Postman
 
 ## Installation and Running
 
@@ -35,3 +36,7 @@ node index.js
 ```
 docker-compose up -d
 ```
+
+## Testing using Postman
+
+You can import from ```postman/```, there is the all configuration file to testing.
